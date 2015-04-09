@@ -1,20 +1,25 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="27" x="213" y="75">
+  <block type="oled_cleardisplay" id="1" x="213" y="75">
     <next>
-      <block type="oled_setcursor" id="36" inline="true">
+      <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="44">
+          <block type="math_number" id="3">
             <field name="NUM">0</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="51">
+          <block type="math_number" id="4">
             <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="60">
+          <block type="oled_drawtext" id="5">
             <field name="TEXT">9+10=21</field>
+            <next>
+              <block type="oled_linerect" id="14">
+                <field name="OBJECT">RECT</field>
+              </block>
+            </next>
           </block>
         </next>
       </block>
