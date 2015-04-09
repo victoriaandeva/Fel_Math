@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="213" y="75">
+  <block type="oled_cleardisplay" id="1" x="250" y="101">
     <next>
       <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
@@ -14,10 +14,34 @@
         </value>
         <next>
           <block type="oled_drawtext" id="5">
-            <field name="TEXT">9+10=21</field>
+            <field name="TEXT">4+(3*2)=</field>
             <next>
-              <block type="oled_color" id="23">
-                <field name="OBJECT">BLACK</field>
+              <block type="oled_drawnumber" id="63" inline="true">
+                <value name="NUMBER">
+                  <block type="math_arithmetic" id="30" inline="true">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="math_number" id="37">
+                        <field name="NUM">4</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_arithmetic" id="70" inline="true">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="math_number" id="77">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="90">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
               </block>
             </next>
           </block>
