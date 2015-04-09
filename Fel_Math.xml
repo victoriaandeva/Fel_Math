@@ -16,8 +16,8 @@
           <block type="oled_drawtext" id="5">
             <field name="TEXT">9+10=21</field>
             <next>
-              <block type="oled_linerect" id="14">
-                <field name="OBJECT">RECT</field>
+              <block type="oled_color" id="23">
+                <field name="OBJECT">BLACK</field>
               </block>
             </next>
           </block>
